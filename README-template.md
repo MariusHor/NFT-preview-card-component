@@ -12,9 +12,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/nft-preview-card-component-with-grid-and-flexbox-B1xoZX7rc)
+- Live Site URL: (https://mariushor.github.io/NFT-preview-card-component/)
 
 ## My process
 
@@ -46,27 +44,14 @@ Users should be able to:
 
 ### What I learned
 
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+On this project I learned to do an overlay effect on an image and this was something that I was wondering how can be done. Although it wasnt easy to 
+find a solution, I am glad that I finally did so I will make sure it sticks 
+with me.
 
 ### Continued development
 
-
+I continued to practice my skills with card creation and I am glad I did because it is something that I plan to fully understand for my future projects.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/MariusHor)
