@@ -62,7 +62,7 @@ main {
 
 .nft-card {
     background: var(--clr-card-bg);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: var(--border-radius);
     max-width: 327px;
     box-shadow: 20px 40px 10px rgb(0, 0, 0, 20%);
