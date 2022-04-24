@@ -48,9 +48,9 @@ body {
     background: var(--clr-main-bg);
 }
 
-a {
-    font: inherit;
-}
+/*-----------------------------------*\
+ * #MAIN
+\*-----------------------------------*/
 
 main {
     min-height: 100vh;
@@ -66,6 +66,8 @@ main {
     max-width: 327px;
     box-shadow: 20px 40px 10px rgb(0, 0, 0, 20%);
 }
+
+    /*IMAGE*/
 
 .img-container {
     position: relative;
@@ -93,7 +95,7 @@ main {
     border-radius: var(--img-border-radius);
 }
 
-
+    /*TEXT*/
 
 a {
     color: white;
@@ -105,18 +107,20 @@ a:hover {
     color: var(--clr-cyan);
 }
 
-h2 {
-    font-size: 2.2rem;
-}
-
 h2 a {
     font-weight: 600;
+}
+
+h2 {
+    font-size: 2.2rem;
 }
 
 p {
     font-weight: 300;
     color: var(--clr-soft-blue);
 }
+
+    /*GRID CONTAINER*/
 
 .grid-container {
     margin-top: 2rem;
@@ -137,12 +141,21 @@ p {
     grid-area: description;
 }
 
-.price {
-    grid-area: price;
-    justify-self: flex-start;
+.price, 
+.time {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.price {
+    grid-area: price;
+    justify-self: flex-start;
+}
+
+.time {
+    grid-area: time;
+    justify-self: flex-end;
 }
 
 .price p {
@@ -152,14 +165,6 @@ p {
 
 .time p {
     font-weight: 400;
-}
-
-.time {
-    grid-area: time;
-    justify-self: flex-end;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 .time img {
@@ -172,6 +177,8 @@ p {
     height: 17px;
 }
 
+    /*CREATOR*/
+
 .creator {
     display: flex;
     align-items: center;
@@ -179,15 +186,15 @@ p {
     margin-top: 2rem;
 }
 
-.creator p {
-    font-size: 1.55rem;
-    font-weight: 400;
-}
-
 .creator img {
     border: solid var(--clr-white) 0.1rem;
     border-radius: 100rem;
     max-width: 3.2rem;
+}
+
+.creator p {
+    font-size: 1.55rem;
+    font-weight: 400;
 }
 
 hr {
