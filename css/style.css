@@ -46,6 +46,7 @@ body {
     font-size: var(--fs-body);
     line-height: 1.5;
     background: var(--clr-main-bg);
+    color: var(--clr-soft-blue);
 }
 
 /*-----------------------------------*\
@@ -60,7 +61,7 @@ main {
     margin: 0 2rem;
 }
 
-.nft-card {
+.card {
     background: var(--clr-card-bg);
     padding: 2rem;
     border-radius: var(--border-radius);
@@ -70,17 +71,17 @@ main {
 
     /*IMAGE*/
 
-.img-container img {
+.card__img {
     border-radius: var(--img-border-radius);
 }
 
-.img-container a {
+.card__preview {
     display: block;
     position: relative;
     cursor: pointer;
 }
 
-.img-container a::before {
+.card__preview::before {
     content: '';
     position: absolute;
     background-color: var(--clr-cyan);
@@ -90,12 +91,12 @@ main {
     border-radius: var(--img-border-radius);
 }
 
-.img-container a:hover::before {
+.card__preview:hover::before {
     opacity: 0.5;
     transition: 0.3s ease-in-out;
 }
 
-.img-container a::after{
+.card__preview::after{
     content: '';
     position: absolute;
     background-image: url(../images/icon-view.svg);
@@ -108,39 +109,14 @@ main {
 
 }
 
-.img-container a:hover::after {
+.card__preview:hover::after {
     opacity: 1;
     transition: 0.3s ease-in-out;
 }
 
-    /*TEXT*/
-
-a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a:hover {
-    color: var(--clr-cyan);
-}
-
-h2 a {
-    font-weight: 600;
-}
-
-h2 {
-    font-size: 2.2rem;
-}
-
-p {
-    font-weight: 300;
-    color: var(--clr-soft-blue);
-}
-
     /*GRID CONTAINER*/
 
-.grid-container {
+.card__info {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,70 +127,77 @@ p {
         'price time';
 }
 
-.grid-container h2 {
+.card__header {
     grid-area: title;
+    font-weight: 600;
+    font-size: 2.2rem;
 }
 
-.description {
+.card__link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card__link:hover {
+    color: var(--clr-cyan);
+}
+
+.card__text {
+    font-weight: 300;
     grid-area: description;
 }
 
-.price, 
-.time {
+.card__details {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.price {
+.card__details--price {
     grid-area: price;
     justify-self: flex-start;
-}
-
-.time {
-    grid-area: time;
-    justify-self: flex-end;
-}
-
-.price p {
     font-weight: 600;
     color: var(--clr-cyan);
 }
 
-.time p {
-    font-weight: 400;
+.card__details--remaining {
+    grid-area: time;
+    justify-self: flex-end;
 }
 
-.time img {
-    width: 17px;
-    height: 17px;
-}
+    /*AUTHOR*/
 
-.price img {
-    width: 11px;
-    height: 17px;
-}
-
-    /*CREATOR*/
-
-.creator {
+.author {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin: 1.5rem 0 0.7rem;
 }
 
-.creator img {
+.author__avatar {
     border: solid var(--clr-white) 0.1rem;
-    border-radius: 100rem;
+    border-radius: 50%;
     max-width: 3.2rem;
 }
 
-.creator p {
-    font-size: 1.55rem;
+.author__name {
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
-hr {
-    border: solid 0.5px var(--clr-line);
+.separator {
+    background: var(--clr-line);
+    height: 1px;
+    width: 100%;
+}
+
+.author__link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.author__link:hover {
+    color: var(--clr-cyan);
 }
