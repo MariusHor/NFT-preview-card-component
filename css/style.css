@@ -151,7 +151,6 @@ main {
 .card__details {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
 }
 
 .card__details--price {
@@ -164,6 +163,32 @@ main {
 .card__details--remaining {
     grid-area: time;
     justify-self: flex-end;
+}
+
+.card__details--price::before {
+    content: '';
+    background: url(../images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 17px;
+    position: absolute;
+}
+
+.card__price {
+    margin-left: 1.8rem;
+}
+
+.card__details--remaining::before {
+    content: '';
+    background: url(../images/icon-clock.svg);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+}
+
+.card__remaining {
+    margin-left: 2rem;
 }
 
     /*AUTHOR*/
@@ -186,10 +211,10 @@ main {
     font-weight: 400;
 }
 
-.separator {
-    background: var(--clr-line);
-    height: 1px;
-    width: 100%;
+.card__separator {
+    background-color: var(--clr-line);
+    height: 0.1rem;
+    border: none;
 }
 
 .author__link {
