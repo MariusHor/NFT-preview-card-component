@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/nft-preview-card-component-with-grid-and-flexbox-B1xoZX7rc)
-- Live Site URL: (https://mariushor.github.io/NFT-preview-card-component/)
+- [Solution URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-with-grid-and-flexbox-B1xoZX7rc)
+- [Live Site URL](https://mariushor.github.io/NFT-preview-card-component/)
 
 ## My process
 
@@ -54,4 +54,4 @@ I continued to practice my skills with card creation and I am glad I did because
 
 ## Author
 
-- Frontend Mentor - (https://www.frontendmentor.io/profile/MariusHor)
+- Frontend Mentor - [@mariusHor](https://www.frontendmentor.io/profile/MariusHor)
